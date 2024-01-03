@@ -39,7 +39,7 @@ class InMemoryDatabase:
         # Exits the database without automatically committing transactions
         print("Exiting the database.")
 
-# Example usage:
+#Example 2: Multiple Transactions
 if __name__ == "__main__":
     # Create an instance of the InMemoryDatabase
     db = InMemoryDatabase()

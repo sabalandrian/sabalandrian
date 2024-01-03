@@ -38,7 +38,6 @@ if __name__ == "__main__":
     # Create an instance of the InMemoryDatabase
     db = InMemoryDatabase()
 
-#Example 1: Basic Commands
     #1 GET a
     print("GET a:", db.get_value("a"))
     #2 SET a foo
