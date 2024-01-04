@@ -1,16 +1,31 @@
-### Hi there 👋
+# In-Memory Database
 
-<!--
-**sabalandrian/sabalandrian** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+The In-Memory Database is a Python class that simulates a basic in-memory database with support for transactions. It includes functionalities for setting values, retrieving values, deleting values, counting occurrences, and managing transactions.
 
-Here are some ideas to get you started:
+## Features
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- **SET:** Set the value associated with a given name in the database.
+- **GET:** Retrieve the value for a specified name.
+- **DELETE:** Delete the value associated with a specified name.
+- **COUNT:** Return the count of distinct names that have a given value assigned to them.
+- **BEGIN:** Start a new transaction.
+- **ROLLBACK:** Rollback the most recent transaction.
+- **COMMIT:** Commit all open transactions and make changes permanent.
+- **END:** Exit the database.
+
+## Usage
+    # SET operation
+    db.set_value("name", "foo")
+    
+    # GET operation
+    value = db.get_value("name")
+    print("GET name:", value)  # Output: GET name: foo
+
+    # DELETE operation
+    db.delete_value("name")
+
+    # COUNT operation
+    count = db.count_values("foo")
+    print("COUNT foo:", count)  # Output: COUNT John: 0
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
