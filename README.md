@@ -27,5 +27,3 @@ The In-Memory Database is a Python class that simulates a basic in-memory databa
     # COUNT operation
     count = db.count_values("foo")
     print("COUNT foo:", count)  # Output: COUNT John: 0
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
